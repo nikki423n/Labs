@@ -1,8 +1,8 @@
 import apcslib.*;
 /**
- * Write a description of class House here.
+ * drawing a house
  *
- * @author (your name)
+ * @author Nicole Nguyen
  * @version (a version number or a date)
  */
 public class House
