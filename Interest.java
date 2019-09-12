@@ -7,5 +7,6 @@ public class Interest
         i = 0.05;
         p = p*(1.0+i)+i*(p+p*i)+i*(p*i+p*i*i);
         System.out.println("p=" +p);
+        
     }
 }
