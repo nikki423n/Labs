@@ -2,7 +2,7 @@ import java.util.GregorianCalendar;
 import java.util.Calendar;
 public class GregorianCalenddar
 {
-    public static void main(String[] args)
+    public static void main()
     {
         GregorianCalendar cal = new GregorianCalendar(); // Today's date
         int dayOfMonth = cal.get(Calendar.DAY_OF_MONTH);

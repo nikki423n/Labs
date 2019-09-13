@@ -5,7 +5,7 @@
 import java.util.Scanner;
 public class Twointegers
 {
-    public static void main(String[] args)
+    public static void main()
     {
         Scanner imp = new Scanner(System.in);
         int x = 5;

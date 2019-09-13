@@ -7,7 +7,7 @@ import apcslib.*;
  */
 public class Benzene
 {
-    public static void main(String args[])
+    public static void main()
     {
         DrawingTool pencil;
         SketchPad pad;
