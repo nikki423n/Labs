@@ -27,6 +27,8 @@ public class Main
             System.out.println("6.) Twointegers ");
             System.out.println("7.) Vendingmachine ");
             System.out.println("8.) Change ");
+            System.out.println("9.) Statsarray");
+            System.out.println("10.) Palindrome");
             System.out.print("?.) ");
             sel = input.readInt();
             
@@ -62,6 +64,14 @@ public class Main
                 case 8:
                     Change changeObject = new Change();
                     changeObject.main();
+                    break;
+                case 9:
+                    Statsarray statsarrayObject = new Statsarray();
+                    statsarrayObject.main();
+                    break;
+                case 10:
+                    Palindrome palindromeObject = new Palindrome();
+                    palindromeObject.main();
                     break;
                 default:
                     System.out.println("Please try again.");

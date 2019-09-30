@@ -8,7 +8,7 @@
  */
 public class MathFun
 {
-    public static void main(String[] args)
+    public static void main()
     {
         int a = 2;
         int b = 3;
