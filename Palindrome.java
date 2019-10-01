@@ -10,7 +10,6 @@ public class Palindrome
         
         String newInput = Input.replaceAll("[^a-zA-Z]", ""); 
         //removes all non-alpha characters like , . ?
-
         char[] myInput = newInput.toCharArray(); 
         //converts string to an array of characters
         System.out.println(newInput);
