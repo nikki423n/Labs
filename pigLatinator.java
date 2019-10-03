@@ -13,13 +13,25 @@ public class pigLatinator
         //converts string to an array of characters
         
         String lowercase = englishWord.toLowerCase();
-        int[] englishWord = new Int[englishWord.length];
-        char vowels = {'a','e', 'i', 'o', 'u'};
+        char[] vowels = {'a','e', 'i', 'o', 'u'};
         
-        String noVowel = 0;
+        int vowelIndex = 100; //if no woel, vowel index = 100
         boolean hasVowel = true;
-        
-        for (i = 0; i < englishWord.length; i++)
+        int length = englishWord.length();
+              for (int i = 0; i < length; i++)
         {
-            if (lowercase != 
+            if (vowelIndex ==0)
+            {
+                hasVowel = false;
+                break;
+            }
+        }
+        if (hasVowel)
+            System.out.println(englishWord +"ay");
+        else
+            System.out.println(englishWord +"yay" );
+    }
+}
+            
+        
         
