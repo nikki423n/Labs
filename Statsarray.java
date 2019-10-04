@@ -20,7 +20,7 @@ public class Statsarray
         }
         double average = sum/10;
         System.out.printf("Average = %.2f\n", average);
-        /*
+        /*prints out to 2 decimal places
          * code for standard deviation
          */
         double SD = 0;
@@ -31,39 +31,6 @@ public class Statsarray
         double StandardDeviation = Math.sqrt(SD/10);
         System.out.printf("StandardDeviation = %.2f\n",StandardDeviation);
     }
-    public static int mode(int[] numbers)
-    {
-        int max = 0;
-        int maxCount = 0;
-        
-        Arrays.sort(numbers); //sorts the array in increasing order
-        
-        max = numbers[numbers.length - 1];
-        int[] count = new int[max + 1];
 
-        for (int i=0; i < 10; i++)
-        {
-            count[numbers[i]]++;
-        }
-        for (int i=0; i < count.length; i++)
-        {
-            if (count[i] > maxCount)
-            {
-                maxCount = count[i];
-            }
-        }
-        for (int i = 0; i <count[i]; i++)
-        {
-            if (count[i] == maxCount)
-            {
-                return i;
-                
-            }
-        }
-        return -1;
-        System.out.println("\nMode = " + mode(numbers[i]));
-    }
 }
-
-
 

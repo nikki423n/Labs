@@ -29,6 +29,7 @@ public class Main
             System.out.println("8.) Change ");
             System.out.println("9.) Statsarray");
             System.out.println("10.) Palindrome");
+            System.out.println("11.) PigLatinator");
             System.out.print("?.) ");
             sel = input.readInt();
             
@@ -72,6 +73,10 @@ public class Main
                 case 10:
                     Palindrome palindromeObject = new Palindrome();
                     palindromeObject.main();
+                    break;
+                case 11:
+                    pigMain pigMainObject = new pigMain();
+                    pigMain.main();
                     break;
                 default:
                     System.out.println("Please try again.");
