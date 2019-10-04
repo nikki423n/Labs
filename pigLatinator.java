@@ -6,8 +6,9 @@ public class pigLatinator
         Scanner in = new Scanner(System.in);
         System.out.println("This is a pigLatinator. It can translate the Enlighs word into the Pig latin word.");
         System.out.println("Enter an English word: ");
-        String englishWord = in.nextLine();
-        String newWord = englishWord.replaceAll("[^a-zA-Z]", "");
+        
+        String userInput = in.nextLine();
+        String newWord = userInput.replaceAll("[^a-zA-Z]", "");
         //removes all non-alpha characters like ? . , ; :
         
         char[] vowels = {'a','e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
