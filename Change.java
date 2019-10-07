@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Change
 {
  
-    public static void main()
+    public static void main(String[] args)
     {
         double purchaseAmount, cashPaid, temp;
         int change;

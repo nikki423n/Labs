@@ -8,7 +8,7 @@ import java.lang.Math;
  */
 public class Quadratic
 {
-    public static void main()
+    public static void main(String[] args)
     {
         // Define variables
         Scanner q = new Scanner(System.in);

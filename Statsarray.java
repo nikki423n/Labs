@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Statsarray
 {
-    public static void main()
+    public static void main(String[] args)
     {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter 10 numbers:");

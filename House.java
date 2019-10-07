@@ -7,7 +7,7 @@ import apcslib.*;
  */
 public class House
 {
-    public static void main()
+    public static void main(String[] args)
     {
         DrawingTool pencil;
         SketchPad pad;
