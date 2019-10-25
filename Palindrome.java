@@ -3,9 +3,7 @@ public class Palindrome
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter a string:");
-        String Input = in.nextLine();
+        String Input = isolatedIO.inputString("Enter a palindrome string");
         boolean isPalindrome = true;
         
         String newInput = Input.replaceAll("[^a-zA-Z]", ""); 
@@ -25,9 +23,9 @@ public class Palindrome
             }
         }
         if (isPalindrome)
-            System.out.println(Input + " is a Palindrome");
+            isolatedIO.outputString(Input + " is a Palindrome");
         else
-            System.out.println(Input + " is not a Palindrome");
+            isolatedIO.outputString(Input + " is not a Palindrome");
     }
 }
 

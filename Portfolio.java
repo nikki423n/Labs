@@ -1,4 +1,5 @@
 import java.util.*;
+
 /**
  * Description of class Portfolio here.
  *
@@ -32,7 +33,7 @@ public class Portfolio
             System.out.println("| J. Palindrome");
             System.out.println("| K. PigLatinator");
             System.out.println("|=====================================");
-            System.out.printf("| Pick your choice: ");
+            System.out.println("| Pick your choice: ");
             response = input.next();
             x = response.charAt(0);
             x = Character.toLowerCase(x);

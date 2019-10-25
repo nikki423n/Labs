@@ -14,10 +14,10 @@ public class Change
         int change;
        Scanner inp = new Scanner(System.in);
        
-        System.out.println("Enter the purchase amount");
+        isolatedIO.inputString("Enter the purchase amount");
         purchaseAmount = inp.nextDouble();
        
-        System.out.println("Enter cash paid: ");
+        isolatedIO.inputString("Enter cash paid: ");
         cashPaid = inp.nextDouble();
         
         temp = cashPaid - purchaseAmount;
@@ -25,19 +25,19 @@ public class Change
        
         change = (int)(temp * 100);
        
-        System.out.println("The number of quarters = " + (change/25));
+       isolatedIO.outputString("The number of quarters = " + (change/25));
        
         change = change - (change/25)*25;
        
-        System.out.println("The number of dimes = " + (change/10));
+        isolatedIO.outputString("The number of dimes = " + (change/10));
        
         change = change - (change/10)*10;
        
-        System.out.println("The number of nickels = " + (change/5));
+       isolatedIO.outputString("The number of nickels = " + (change/5));
        
         change = change - (change/5)*5;
        
-        System.out.println("The number of pennies = " + change);
+        isolatedIO.outputString("The number of pennies = " + change);
        
     }
 }

@@ -10,9 +10,9 @@ public class Twointegers
         Scanner imp = new Scanner(System.in);
         int x = 5;
         int y = 8;
-        System.out.println("Enter a number: ");
+        isolatedIO.inputString("Enter a number: ");
         x = imp.nextInt();
-        System.out.println("Enter another number: ");
+        isolatedIO.inputString("Enter another number: ");
         y = imp.nextInt();
         int sum = x + y;
         int difference = x - y;
@@ -23,11 +23,11 @@ public class Twointegers
         /*to find minimum of two int values use static int min(int x, int y)
          * method of Math class
          */
-        System.out.println("sum:" +sum);
-        System.out.println("difference:" +difference);
-        System.out.println("average:" +average);
-        System.out.println("distance:" +distance);
-        System.out.println("max:" +maximum);
-        System.out.println("min:" +minimum);
+        isolatedIO.outputString("sum:" +sum);
+        isolatedIO.outputString("difference:" +difference);
+        isolatedIO.outputString("average:" +average);
+        isolatedIO.outputString("distance:" +distance);
+        isolatedIO.outputString("max:" +maximum);
+        isolatedIO.outputString("min:" +minimum);
     }
 }
