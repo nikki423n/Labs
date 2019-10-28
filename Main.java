@@ -4,10 +4,11 @@ import java.util.*;
  * Description of class Portfolio here.
  *
  */
-public class Portfolio
+public class Main
 {
     public static void main(String[] args)
     {
+
         Scanner input = new Scanner(System.in);
         String response;
         Character x;
@@ -32,6 +33,8 @@ public class Portfolio
             System.out.println("| I. Statsarray");
             System.out.println("| J. Palindrome");
             System.out.println("| K. PigLatinator");
+            System.out.println("| L. PalindromeI&J");
+            System.out.println("| M. PalindromeRecursion");
             System.out.println("|=====================================");
             System.out.println("| Pick your choice: ");
             response = input.next();
@@ -72,10 +75,17 @@ public class Portfolio
                 case 'k': 
                 callLab11();
                 break;
+                case 'l':
+                callLab12();
+                break;
+                case 'm':
+                callLab13();
+                break;
                 case '0': 
                 break;
                 default:
                 break;
+
             }
         }
         while(x != '0');
@@ -149,4 +159,15 @@ public class Portfolio
         pigMain.main(args);
     }
 
+    public static void callLab12()
+    {
+        String[] args = new String[] {" "};
+        PalindromeIJ.main(args);
+    }
+
+    public static void callLab13()
+    {
+        String[] args = new String[] {" "};
+        PaliRecursion.main(args);
+    }
 }

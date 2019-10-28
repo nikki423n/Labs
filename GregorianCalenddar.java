@@ -10,12 +10,12 @@ public class GregorianCalenddar
         int year = cal.get(Calendar.YEAR);
         int weekday = cal.get(Calendar.DAY_OF_WEEK); // 1 is Sunday, 2 is Monday,..., 7 is Saturday
         cal.add(Calendar.DAY_OF_MONTH, 100); // Now cal is one hundred days from today
-        isolatedIO.outputString("cal = " + cal.get(Calendar.MONTH) + "/" 
+        ConsoleIO.printString("cal = " + cal.get(Calendar.MONTH) + "/" 
         + cal.get(Calendar.DAY_OF_MONTH) + "/" + cal.get(Calendar.YEAR));
         
         GregorianCalendar NikkisBday = new GregorianCalendar(2003, Calendar.APRIL, 2);
-        isolatedIO.outputString("NikkisBday=" + NikkisBday.get(Calendar.DAY_OF_WEEK));
+        ConsoleIO.printString("NikkisBday=" + NikkisBday.get(Calendar.DAY_OF_WEEK));
         NikkisBday.add(Calendar.DAY_OF_MONTH, 10000); // Now nikkis bday is ten thousand days from today
-        isolatedIO.outputString("NikkisBday = " + NikkisBday.get(Calendar.MONTH) + "/" + NikkisBday.get(Calendar.DAY_OF_MONTH) + "/" + NikkisBday.get(Calendar.YEAR));
+        ConsoleIO.printString("NikkisBday = " + NikkisBday.get(Calendar.MONTH) + "/" + NikkisBday.get(Calendar.DAY_OF_MONTH) + "/" + NikkisBday.get(Calendar.YEAR));
     }
 }

@@ -8,14 +8,14 @@ public class Vendingmachine
         Scanner in = new Scanner(System.in);
         final int PENNIES_PER_DOLLAR = 100;
         final int PENNIES_PER_QUARTER = 25;
-        isolatedIO.inputString("Enter bill value (1 = $1 bill, 5 = $5 bill, etc.): ");
+        ConsoleIO.getString("Enter bill value (1 = $1 bill, 5 = $5 bill, etc.): ");
 
         int billValue = in.nextInt();
 
-        isolatedIO.inputString("Enter coin value (1 = 1 quarter, 2 = 2 quarters, etc.): ");
+        ConsoleIO.getString("Enter coin value (1 = 1 quarter, 2 = 2 quarters, etc.): ");
         int coinValue = in.nextInt();
 
-        isolatedIO.inputString("Enter item price in pennies: ");
+        ConsoleIO.getString("Enter item price in pennies: ");
         int itemPrice = in.nextInt();
         // compute change due
         int changeDue = ((PENNIES_PER_DOLLAR * billValue) + (PENNIES_PER_QUARTER * coinValue)) - itemPrice;

@@ -16,15 +16,15 @@ public class Quadratic
         double root1, root2;
 
         // Get the coefficient in front of x^2
-        System.out.println("Enter the a coefficient: ");
+       ConsoleIO.getString("Enter the a coefficient: ");
         a = q.nextDouble();
 
         // Get the coeficient in front of x
-        System.out.println("Enter the b coefficient: ");
+        ConsoleIO.getString("Enter the b coefficient: ");
         b = q.nextDouble();
 
         // Get constant term
-        System.out.println("Enter the c coefficient: ");
+        ConsoleIO.getString("Enter the c coefficient: ");
         c = q.nextDouble();
 
         // calculate the roots using quadratic formula

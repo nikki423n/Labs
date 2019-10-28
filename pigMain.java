@@ -14,7 +14,7 @@ public class pigMain
         do
         {
             PigLatin pigObject = new PigLatin();
-            System.out.println("Enter a string:");
+            System.out.println("This is pigLatinator. It converts a string to piglatin --> Enter a string:");
             userInput = inp.nextLine();
            
             char [] input_array = userInput.toCharArray();
