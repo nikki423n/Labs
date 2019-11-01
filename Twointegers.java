@@ -1,19 +1,14 @@
-/*Find the difference, maximum, and minimum of two numbers using Math.min, Math.max, and Math.abs
- * 
- * 
- */
-import java.util.Scanner;
+//Find the difference, maximum, and minimum of two numbers using Math.min, Math.max, and Math.abs
+//import java.util.Scanner;
 public class Twointegers
 {
     public static void main(String[] args)
     {
-        Scanner imp = new Scanner(System.in);
-        int x = 5;
-        int y = 8;
-        ConsoleIO.getString("Enter a number: ");
-        x = imp.nextInt();
-        ConsoleIO.getString("Enter another number: ");
-        y = imp.nextInt();
+        String imp = ConsoleIO.getString("This is a program to find the sum, difference, average, distance, max, and min of 2 integers"); 
+
+        int x =  ConsoleIO.getInt("Enter a number: ");
+
+        int y =  ConsoleIO.getInt("Enter another number: ");
         int sum = x + y;
         int difference = x - y;
         double average = (x + y)/2.0;
@@ -24,10 +19,10 @@ public class Twointegers
          * method of Math class
          */
         ConsoleIO.printString("sum:" +sum);
-       ConsoleIO.printString("difference:" +difference);
+        ConsoleIO.printString("difference:" +difference);
         ConsoleIO.printString("average:" +average);
-       ConsoleIO.printString("distance:" +distance);
-       ConsoleIO.printString("max:" +maximum);
+        ConsoleIO.printString("distance:" +distance);
+        ConsoleIO.printString("max:" +maximum);
         ConsoleIO.printString("min:" +minimum);
     }
 }

@@ -1,10 +1,9 @@
-import java.util.Scanner;
 import java.lang.String;
 
 public class PaliRecursion
 {
     public static void main(String[] args)
-    {   String input = ConsoleIO.getString("Enter a palindrome candidate").toLowerCase();
+    {  String input = ConsoleIO.getString("This is palindrome with recursion --> Enter a palindrome candidate").toLowerCase();
         if (isPalindrome(input))
             ConsoleIO.printString(input + " is a Palindrome");
         else

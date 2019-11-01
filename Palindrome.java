@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 public class Palindrome
 {
     public static void main(String[] args)
@@ -24,7 +24,7 @@ public class Palindrome
         if (isPalindrome)
             ConsoleIO.printString(Input + " is a Palindrome");
         else
-            ConsoleIO.printString(Input + " is not a Palindrome");
+            ConsoleIO.printString(Input + " is NOT a Palindrome");
     }
 }
 

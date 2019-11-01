@@ -35,6 +35,7 @@ public class Main
             System.out.println("| K. PigLatinator");
             System.out.println("| L. PalindromeI&J");
             System.out.println("| M. PalindromeRecursion");
+            System.out.println("| N. PalindromeReverseString");
             System.out.println("|=====================================");
             System.out.println("| Pick your choice: ");
             response = input.next();
@@ -80,6 +81,9 @@ public class Main
                 break;
                 case 'm':
                 callLab13();
+                break;
+                case 'n':
+                callLab14();
                 break;
                 case '0': 
                 break;
@@ -169,5 +173,10 @@ public class Main
     {
         String[] args = new String[] {" "};
         PaliRecursion.main(args);
+    }
+    public static void callLab14()
+    {
+        String[] args = new String[] {" "};
+        PaliReverseString.main(args);
     }
 }

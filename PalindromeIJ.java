@@ -1,9 +1,9 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 public class PalindromeIJ
 {
     public static void main(String[] args)
     {
-        String input = ConsoleIO.getString("Enter a palindrome candidate").toLowerCase();
+        String input = ConsoleIO.getString("This is palindrome I&J --> Enter a palindrome candidate").toLowerCase();
         
         if (isPalindrome(input))
             ConsoleIO.printString(input + " is a Palindrome");

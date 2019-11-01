@@ -1,22 +1,20 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 import java.lang.String;
 
 public class Vendingmachine
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        
         final int PENNIES_PER_DOLLAR = 100;
         final int PENNIES_PER_QUARTER = 25;
-        ConsoleIO.getString("Enter bill value (1 = $1 bill, 5 = $5 bill, etc.): ");
+       
+        int billValue = ConsoleIO.getInt("Enter bill value (1 = $1 bill, 5 = $5 bill, etc.): ");
 
-        int billValue = in.nextInt();
+        
+        int coinValue = ConsoleIO.getInt("Enter coin value (1 = 1 quarter, 2 = 2 quarters, etc.): ");
 
-        ConsoleIO.getString("Enter coin value (1 = 1 quarter, 2 = 2 quarters, etc.): ");
-        int coinValue = in.nextInt();
-
-        ConsoleIO.getString("Enter item price in pennies: ");
-        int itemPrice = in.nextInt();
+        int itemPrice = ConsoleIO.getInt("Enter item price in pennies: ");
         // compute change due
         int changeDue = ((PENNIES_PER_DOLLAR * billValue) + (PENNIES_PER_QUARTER * coinValue)) - itemPrice;
         int dollarCoins = changeDue / PENNIES_PER_DOLLAR;
@@ -24,10 +22,11 @@ public class Vendingmachine
         int quarters = changeDue / PENNIES_PER_QUARTER;
         changeDue = changeDue % PENNIES_PER_QUARTER;
         // Print change due
-        System.out.printf("Dollar coins: %6d", dollarCoins);
-        System.out.println();
-        System.out.printf("Quarters:     %6d", quarters);
-        System.out.println();
+        String f = ("Dollar coins: " + dollarCoins);
+        ConsoleIO.printString(f);
+        String Q = ("Quarters: " + quarters);
+        ConsoleIO.printString(Q);
+        
     }
 }
 

@@ -1,28 +1,22 @@
-import java.util.Scanner;
  
  
 public class pigMain
 {
- 
     public static void main(String[] args)
     {
-        Scanner inp = new Scanner(System.in);
-       
         String ans;
         String userInput;
        
         do
         {
             PigLatin pigObject = new PigLatin();
-            System.out.println("This is pigLatinator. It converts a string to piglatin --> Enter a string:");
-            userInput = inp.nextLine();
+            userInput = ConsoleIO.getString("This is pigLatinator. It converts a string to piglatin --> Enter a string: ");
            
             char [] input_array = userInput.toCharArray();
             pigObject.convert(input_array);
             pigObject.printOutput();
            
-            System.out.print("Would you like to translate another phrase? ");
-            ans = inp.nextLine();
+            ans = ConsoleIO.getString("Would you like to translate another phrase? ");
            
             System.out.println("");
         }
